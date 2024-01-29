@@ -1,0 +1,89 @@
+
+/* Reset de estilos para la aplicación */
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #213547;
+  background-color: #ffffff;
+}
+
+/* Enlaces */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+}
+a:hover {
+  color: #747bff;
+}
+
+/* Cuerpo de la aplicación */
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Títulos */
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* Botones */
+button {
+  border-radius: 8px;
+  border: 1px solid #4CAF50; /* Color verde para el borde */
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #4CAF50; /* Color verde para el fondo */
+  color: #ffffff; /* Texto blanco para mejor contraste */
+  cursor: pointer;
+  transition: border-color 0.25s, background-color 0.25s, color 0.25s;
+}
+button:hover {
+  border-color: #1a1a1a; /* Cambia a un tono más oscuro al pasar el ratón */
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Tarjeta (puedes personalizar según las clases que uses en tu aplicación) */
+.card {
+  padding: 2em;
+  border: 1px solid #4CAF50; /* Bordes verdes */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Contenedor principal de la aplicación */
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Estilos adicionales para el modo claro (opcional) */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+    border-color: #ddd; /* Bordes más claros en modo claro */
+    color: #333; /* Texto más oscuro para mejor contraste */
+  }
+}
